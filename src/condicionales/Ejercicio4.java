@@ -108,6 +108,7 @@ public class Ejercicio4 {
 			System.out.println(decena2 +" y "+ unidad);
 		}
 		
+		//cerramos scanner
 		sc.close();
 		
 		

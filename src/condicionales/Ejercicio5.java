@@ -17,10 +17,14 @@ public class Ejercicio5 {
 		//insertamos num
 		num = sc.nextInt();
 		
+		//metemos en resultado la operacion para que salga valor absoluto
 		resultado = num<0 ?(num-num-num):num;
 		
+		//imprimimos resultado
 		System.out.println("El valor absoltuto de " + num + " es "+resultado);
 		
+		//cerramos scanner
+		sc.close();
 	}
 
 }
