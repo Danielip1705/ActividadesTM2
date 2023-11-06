@@ -42,15 +42,8 @@ public class Ejercicio8 {
 			System.out.println("Su precio a pagar es de: " +precio);
 		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		//cerramos scanner
+		sc.close();
 		
 	}
 
