@@ -22,11 +22,6 @@ public class Ejercicio4 {
 
 		// escribimos num1
 		num2 = sc.nextInt();
-		
-		for (int divisior1;divisor1!=divisor2;divisor1++) {
-			for(int divisor2;divisor)
-		}
 
 	}
-
 }

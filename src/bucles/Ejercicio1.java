@@ -35,17 +35,22 @@ public class Ejercicio1 {
 		// escribimos el incremento
 		incremento = sc.nextInt();
 
-		for (int i = 0; i < incremento; i++) {
-			if (segundos+incremento>=60) {
-				segundos0
+		for (int i = 0; i < incremento;) {
+			if (segundos + incremento >= 60) {
+				segundos -= incremento;
+				minutos++;
+			} else if (minutos >= 60) {
+				minutos = 0;
+				hora++;
+			} else if (hora >= 23) {
+				hora = 0;
 			}
+			System.out.println(hora + ":" + minutos + ":" + segundos);
 			
+
+			// cerramos scanner
+			sc.close();
+
 		}
-		System.out.println(hora + ":" + minutos + ":" + segundos);
-		sc.close();
-
-		// cerramos scanner
-		sc.close();
-
 	}
 }

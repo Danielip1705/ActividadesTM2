@@ -6,8 +6,8 @@ public class Ejercicicio2 {
 
 	public static void main(String[] args) {
 		// declaramos con la variable int el num y divisor
-		int num, numpri=0,a;
-		boolean esprimo;
+		int num, numpri = 0;
+		boolean esPrimo = true;
 		// creamos scanner
 		Scanner sc = new Scanner(System.in);
 
@@ -16,14 +16,21 @@ public class Ejercicicio2 {
 
 		// escribimos numero
 		num = sc.nextInt();
-
-		for (int i=1; i<num;i++) {
-			
-			
-			
-			
+		
+		//con for declaramos que si i(2)es mayorigual a num, se incrementa
+		for (int i = 2; i <= num; i++) {
+			//hacemos otro for pero 
+			for (int j = 2; j < i; j++) {
+				if (i % j == 0) {
+					esPrimo = false;
+					break;
+				}
+			}
+			if (esPrimo) {
+				numpri++;
 			}
 
 		}
+		System.out.println("Hay " + numpri + " numeros primos");
 	}
-
+}
