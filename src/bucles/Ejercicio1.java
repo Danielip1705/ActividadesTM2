@@ -36,7 +36,9 @@ public class Ejercicio1 {
 		incremento = sc.nextInt();
 
 		for (int i = 0; i < incremento; i++) {
-			
+			if (segundos+incremento>=60) {
+				segundos0
+			}
 			
 		}
 		System.out.println(hora + ":" + minutos + ":" + segundos);
