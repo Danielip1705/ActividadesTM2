@@ -16,23 +16,23 @@ public class Ejercicio3 {
 
 		// insertamos el num
 		num = sc.nextInt();
-		
-		//indicamos con for como va a ser la altura del triangulo
-		for(int altura=1;altura<=num;altura++) {
-			//indicamos con for los espacio que debe de tener cada fila  
-			for(int espacio=1;espacio<=num-altura;espacio++) {
+
+		// indicamos con for como va a ser la altura del triangulo
+		for (int altura = 1; altura <= num; altura++) {
+
+			// indicamos con for los espacio que debe de tener cada fila
+			for (int espacio = 1; espacio <= num - altura; espacio++) {
 				System.out.print(" ");
 			}
-			//indicamos con for los asteriscos que debe de tener cada fila
-			for(int relleno=1;relleno<=altura;relleno++) {
+			// indicamos con for los asteriscos que debe de tener cada fila
+			for (int relleno = 1; relleno < altura; relleno++) {
 				System.out.print(" *");
-				
-				
+
 			}
-			//espacio para cada asterisco
-			System.out.println( );
+			// espacio para cada asterisco
+			System.out.println();
 		}
-		//cerrammos scanner
+		// cerrammos scanner
 		sc.close();
 	}
 }

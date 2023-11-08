@@ -23,5 +23,15 @@ public class Ejercicio4 {
 		// escribimos num1
 		num2 = sc.nextInt();
 
+		for (int menor = 0; resultado = num1 % menor;)
+			if (num1 > num2) {
+
+				menor = num2;
+
+			} else {
+
+				menor = num1;
+			}
+
 	}
 }

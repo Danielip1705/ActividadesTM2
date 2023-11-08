@@ -1,5 +1,6 @@
 package bucles;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Ejercicio1 {
@@ -35,22 +36,24 @@ public class Ejercicio1 {
 		// escribimos el incremento
 		incremento = sc.nextInt();
 
-		for (int i = 0; i < incremento;) {
-			if (segundos + incremento >= 60) {
-				segundos -= incremento;
-				minutos++;
-			} else if (minutos >= 60) {
-				minutos = 0;
-				hora++;
-			} else if (hora >= 23) {
-				hora = 0;
+		do {
+			try {
+			// imprimimos en consola que nos inserte las horas
+			System.out.println("Inserta la hora");
+
+			// escribimos la hora
+			hora = sc.nextInt();
+			}catch (InputMismatchException e) {
+				System.out.println("El dato introduccido no es correcto");
+				sc.nextLine();
 			}
-			System.out.println(hora + ":" + minutos + ":" + segundos);
-			
 
-			// cerramos scanner
-			sc.close();
+		} while (segundos >= 60 && minutos >= 60 && hora >= 23);
 
-		}
+		System.out.println(hora + ":" + minutos + ":" + segundos);
+
+		// cerramos scanner
+		sc.close();
+
 	}
 }
