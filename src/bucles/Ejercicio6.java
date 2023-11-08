@@ -17,7 +17,7 @@ public class Ejercicio6 {
 
 		// insertamos num
 		num = sc.nextInt();
-
+		
 		// con for declaramos el num filas que debe de hacer
 		for (int i = 1; i <= num; i++) {
 
