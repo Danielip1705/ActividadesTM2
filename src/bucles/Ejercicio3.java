@@ -25,7 +25,7 @@ public class Ejercicio3 {
 				System.out.print(" ");
 			}
 			// indicamos con for los asteriscos que debe de tener cada fila
-			for (int relleno = 1; relleno < altura; relleno++) {
+			for (int relleno = 1; relleno <= altura; relleno++) {
 				System.out.print(" *");
 
 			}

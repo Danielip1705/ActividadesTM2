@@ -23,7 +23,7 @@ public class Ejercicicio2 {
 			for (int j = 2; j < i; j++) {
 				if (i % j == 0) {
 					esPrimo = false;
-					break;
+					
 				}
 			}
 			if (esPrimo) {

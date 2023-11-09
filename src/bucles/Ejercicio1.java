@@ -7,28 +7,52 @@ public class Ejercicio1 {
 
 	public static void main(String[] args) {
 		// Declaramos con la variable int hora minutos, segundos incremtno
-		int hora, minutos, segundos, incremento;
+		int hora = 0, minutos = 0, segundos = 0, incremento;
 
 		// creamos un scanner
 		Scanner sc = new Scanner(System.in);
 
-		// imprimimos en consola que nos inserte las horas
-		System.out.println("Inserta la hora");
+		do {
+			try {
+				// imprimimos en consola que nos inserte las horas
+				System.out.println("Inserta la hora");
 
-		// escribimos la hora
-		hora = sc.nextInt();
+				// escribimos la hora
+				hora = sc.nextInt();
+			} catch (InputMismatchException e) {
+				System.out.println("El dato introduccido no es correcto");
+				sc.nextLine();
+			}
 
-		// imprimimos en consola que nos inserte los minutos
-		System.out.println("Inserta los minutos");
+		} while (hora < 0 || hora > 23);
 
-		// escribimos los minutos
-		minutos = sc.nextInt();
+		do {
+			try {
+				// imprimimos en consola que nos inserte los minutos
+				System.out.println("Inserta los minutos");
 
-		// imprimimos en consola que nos inserte los segundos
-		System.out.println("Inserta los segundos");
+				// escribimos los minutos
+				minutos = sc.nextInt();
+			} catch (InputMismatchException e) {
+				System.out.println("El dato introduccido no es correcto");
+				sc.nextLine();
+			}
 
-		// escribimos los segundos
-		segundos = sc.nextInt();
+		} while (minutos < 0 || minutos > 59);
+
+		do {
+			try {
+				// imprimimos en consola que nos inserte los segundos
+				System.out.println("Inserta los segundos");
+
+				// escribimos los minutos
+				segundos = sc.nextInt();
+			} catch (InputMismatchException e) {
+				System.out.println("El dato introduccido no es correcto");
+				sc.nextLine();
+			}
+
+		} while (segundos < 0 || segundos > 59);
 
 		// Imprimimos en consola que nos inserte el incremento
 		System.out.println("Inserte el cuantos segundos quieres incrementar");
@@ -36,20 +60,7 @@ public class Ejercicio1 {
 		// escribimos el incremento
 		incremento = sc.nextInt();
 
-		do {
-			try {
-			// imprimimos en consola que nos inserte las horas
-			System.out.println("Inserta la hora");
-
-			// escribimos la hora
-			hora = sc.nextInt();
-			}catch (InputMismatchException e) {
-				System.out.println("El dato introduccido no es correcto");
-				sc.nextLine();
-			}
-
-		} while (segundos >= 60 && minutos >= 60 && hora >= 23);
-
+		for (int i)
 		System.out.println(hora + ":" + minutos + ":" + segundos);
 
 		// cerramos scanner
