@@ -17,15 +17,21 @@ public class Ejercicio7 {
 		// escribimos num
 		num = sc.nextInt();
 
+		//con for declaramos la altura que tiene la piramide
 		for (int altura = 1; altura <= num; altura++) {
-			for (int numizq = 1; numizq >=num ;numizq++) {
+			//con for declaramos los numeros accedentes
+			for (int numizq = 1; numizq <=altura ;numizq++) {
 				System.out.print(numizq);
 			}
-			for (int numder = 1; numder < 1; numder--) {
+			//con for declaramos los numeros de forma desendende 
+			for (int numder = altura-1; numder >= 1 ; numder--) {
 				System.out.print(numder);
-				
 			}
+			//imprimimos en consola un salto de linea
 			System.out.println();
+			
+			//cerramos scanner
+			sc.close();
 		}
 
 	}

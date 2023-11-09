@@ -60,8 +60,35 @@ public class Ejercicio1 {
 		// escribimos el incremento
 		incremento = sc.nextInt();
 
-		for (int i)
-		System.out.println(hora + ":" + minutos + ":" + segundos);
+		for (int i = 0; i < incremento; i++) {
+			segundos++;
+			if (segundos == 60) {
+				segundos = 0;
+				minutos++;
+			}
+			if (minutos == 60) {
+				minutos = 0;
+				hora++;
+			}
+			if (hora == 24) {
+				hora = 0;
+
+			}
+		}
+		//imprimimos en pantalla que segun el resultado que obtengamos, que nos ponga un 0(para que se vea mejor)
+		if (hora > 10 && minutos > 10 && segundos > 10) {
+			System.out.println(hora + ":" + minutos + ":" + segundos);
+		} else if (hora > 10 && minutos > 10) {
+			System.out.println(hora + ":" + minutos + ":0" + segundos);
+		} else if (hora > 10) {
+			System.out.println(hora + ":0" + minutos + ":0" + segundos);
+		} else if (hora < 10 && minutos < 10 && segundos < 10) {
+			System.out.println("0" + hora + ":0" + minutos + ":0" + segundos);
+		} else if (segundos > 10) {
+			System.out.println("0" + hora + ":0" + minutos + ":" + segundos);
+		} else if (minutos > 10) {
+			System.out.println("0" + hora + ":" + minutos + ":0" + segundos);
+		}
 
 		// cerramos scanner
 		sc.close();

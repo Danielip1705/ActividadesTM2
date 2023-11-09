@@ -5,32 +5,36 @@ import java.util.Scanner;
 public class Ejercicicio2 {
 
 	public static void main(String[] args) {
-		// declaramos con la variable int el num y divisor
 		int num, numpri = 0;
-		boolean esPrimo = true;
 		// creamos scanner
 		Scanner sc = new Scanner(System.in);
-
 		// imprimimos en consola que nos inserte un numero
 		System.out.println("Inserta un numero");
 
-		// escribimos numero
+		// escribimos num
 		num = sc.nextInt();
-		
-		//con for declaramos que si i(2)es mayorigual a num, se incrementa
+
+		// indicamos con for, la 1 cifra que se va a dividir
 		for (int i = 2; i <= num; i++) {
-			//hacemos otro for pero 
+			boolean esPrimo = true;
+			// indicamos con for la 2 cifra que se va a dividir entre i
 			for (int j = 2; j < i; j++) {
+				// con if declaramos que si el resto de i/j es igual a 0, primo es falso y se
+				// rompe el bucle
 				if (i % j == 0) {
 					esPrimo = false;
-					
+					break;
 				}
-			}
+			} // declaramos con if de nuevo, que si el resultado es primo, se incremente
+				// numpri
 			if (esPrimo) {
 				numpri++;
 			}
-
 		}
+		// imprimimos en consola el resultado
 		System.out.println("Hay " + numpri + " numeros primos");
+		
+		//cerramos scanner
+		sc.close();
 	}
 }

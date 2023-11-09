@@ -31,15 +31,15 @@ public class Ejercicio4 {
 
 			menor = num1;
 		}
-		//con for hacemos que i se divida entre i y que tras eso se guarde
+		//con for hacemos que se haga las intrucciones hasta que i sea igual a menor
 		for (int i=2;i<=menor;i++ ) {
-			//declaramos con if que si num1 o num2 no de resto, que se guarde el divisor actual en mcd
+			//declaramos con if que si num1 o num2 no da resto, que se guarde el divisor actual en mcd
 			if (num1 % i == 0 && num2 % i == 0) {
                 mcd = i;
             }
 		}
 		//imprimimos en consola el resultado
-		System.out.println("El maximo comun divisisor de: " +num1+" y " +num2+" es " +mcd);	
+		System.out.println("El maximo comun divisor de: " +num1+" y " +num2+" es " +mcd);	
 		
 		//cerramos scanner
 		sc.close();
