@@ -5,16 +5,16 @@ import java.util.Scanner;
 public class Ejercicio7 {
 
 	public static void main(String[] args) {
-		// Declaramos con la variable int las horas,minutos y segundos
+		// Declaramos con la variable int las horass,minutos y segundos
 		int horas, minutos, segundos;
 
 		// creamos un scanner
 		Scanner sc = new Scanner(System.in);
 
-		// imprimimos en consola que nos escriba la hora
-		System.out.println("Indique la hora");
+		// imprimimos en consola que nos escriba la horas
+		System.out.println("Indique la horas");
 
-		// escibimos la hora
+		// escibimos la horas
 		horas = sc.nextInt();
 
 		// imprimimos en consola que nos escriba los minutos
@@ -31,7 +31,8 @@ public class Ejercicio7 {
 
 		// incrementamos los segundos(+1)
 		segundos++;
-
+		// con if, hacemos que el tiempo no supere su limite(60 y 23) y en caso de
+		// serlo, que incrememente minutos o horas
 		if (segundos == 60) {
 			segundos = 0;
 			minutos++;
@@ -41,22 +42,20 @@ public class Ejercicio7 {
 		} else if (horas == 24) {
 			horas = 0;
 		}
-		if (horas < 10 && minutos < 10 && segundos < 10) { //01:01:01
-			System.out.println("0" + horas + ":0" + minutos + ":0" + segundos);
-
-		} else if (horas < 10 && minutos < 10 ) {//01:01:10
-			System.out.println("0" + horas + ":0" + minutos + ":" + segundos);
-
-		} else if (horas < 10 && minutos > 10 && segundos > 10) {//01:10:10
-			System.out.println("0" + horas + ":" + minutos + ":" + segundos);
-
-		} else if (horas > 10 && minutos < 10 && segundos < 10) {//10:10:10
-			System.out.println(horas + ":0" + minutos + ":0" + segundos);
-		//}else if () {
-			
-
-		} else {
+		// imprimimos en pantalla que segun el resultado que obtengamos, que nos ponga
+		// un 0(para que se vea mejor)
+		if (horas > 10 && minutos > 10 && segundos > 10) {
 			System.out.println(horas + ":" + minutos + ":" + segundos);
+		} else if (horas > 10 && minutos > 10) {
+			System.out.println(horas + ":" + minutos + ":0" + segundos);
+		} else if (horas > 10) {
+			System.out.println(horas + ":0" + minutos + ":0" + segundos);
+		} else if (horas < 10 && minutos < 10 && segundos < 10) {
+			System.out.println("0" + horas + ":0" + minutos + ":0" + segundos);
+		} else if (segundos > 10) {
+			System.out.println("0" + horas + ":0" + minutos + ":" + segundos);
+		} else if (minutos > 10) {
+			System.out.println("0" + horas + ":" + minutos + ":0" + segundos);
 		}
 
 		// cerramos scanner
