@@ -6,10 +6,10 @@ public class Ejercicio3 {
 
 	public static void main(String[] args) {
 		//declaramos con int cantidad y animales
-		int cantidad,animales;
+		int animales;
 		
 		//declaramos con double resultado y kilos
-		double kilos,resultado,comen;
+		double kilos,comen,total,cantidad;
 		
 		//creamos scanner
 		Scanner sc = new Scanner(System.in);
@@ -34,12 +34,13 @@ public class Ejercicio3 {
 		
 		comen = animales*kilos;
 		
+		total= cantidad-comen;
 		if ((cantidad-comen)>0) {
 			System.out.println("Tenemos suficiente comida para alimentar a todos los animaeles");
 			
 		} else {
-			comen/=cantidad;
-			System.out.println("Cada animal come" + comen);
+			cantidad/=animales;
+			System.out.println("No hay suficiente comida, cada animal tendra que comer  " + cantidad +"kg el dia de hoy");
 		}
 			
 		

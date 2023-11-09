@@ -35,7 +35,7 @@ public class Ejercicio7 {
 		if (segundos == 60) {
 			segundos = 0;
 			minutos++;
-		} else if (minutos == 60) {
+		} else if (minutos == 59) {
 			minutos = 0;
 			horas++;
 		} else if (horas == 24) {
@@ -44,7 +44,7 @@ public class Ejercicio7 {
 		if (horas < 10 && minutos < 10 && segundos < 10) { //01:01:01
 			System.out.println("0" + horas + ":0" + minutos + ":0" + segundos);
 
-		} else if (horas < 10 && minutos < 10 && segundos > 10) {//01:01:10
+		} else if (horas < 10 && minutos < 10 ) {//01:01:10
 			System.out.println("0" + horas + ":0" + minutos + ":" + segundos);
 
 		} else if (horas < 10 && minutos > 10 && segundos > 10) {//01:10:10
