@@ -14,23 +14,32 @@ import java.util.InputMismatchException;
 
 import java.util.Scanner;
 
+/*/ENTRADA:10,10,10,10 | RES.ESPERADO:10:10:20 | RES.OBTENIDO:10:10:20
+ * ENTRADA:10,10,1,4 | RES.ESPERADO:10:10:05 | RES.OBTENIDO:10:10:05
+ * ENTRADA:10,5,4,1 | RES.ESPERADO:10:05:05 | RES.OBTENIDO: 10:05:05
+ * ENTRADA:5,5,4,1 | RES.ESPERADO:05.05:05 | RES.OBTENIDO:05.05:05
+ * ENTRADA:23,59,59,6 | RES.ESPERADO:00:00:05 | RES.OBTENIDO:00:00:05
+ */
 public class Ejercicio1 {
 
 	public static void main(String[] args) {
-		// Declaramos con la variable int hora minutos, segundos incremtno
+		// Declaramos las variables para hora, minutos, segundos e incremento
 		int hora = 0, minutos = 0, segundos = 0, incremento;
 
 		// creamos un scanner
 		Scanner sc = new Scanner(System.in);
-
+		// iniciamos bucle do-while para que escriba la hora
 		do {
+			// iniciamos try para que inserte la hora
 			try {
 				// imprimimos en consola que nos inserte las horas
 				System.out.println("Inserta la hora");
 
 				// escribimos la hora
 				hora = sc.nextInt();
-				
+
+				// iniciamos catch para que detecte si escribimos letra y volvamos a escribir la
+				// hora
 			} catch (InputMismatchException e) {
 				System.out.println("El dato introduccido no es correcto");
 				sc.nextLine();
@@ -38,6 +47,7 @@ public class Ejercicio1 {
 
 		} while (hora < 0 || hora > 23);
 
+		// ahora con los minutos
 		do {
 			try {
 				// imprimimos en consola que nos inserte los minutos
@@ -52,6 +62,7 @@ public class Ejercicio1 {
 
 		} while (minutos < 0 || minutos > 59);
 
+		// ahora con los segundos
 		do {
 			try {
 				// imprimimos en consola que nos inserte los segundos
