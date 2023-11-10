@@ -6,7 +6,7 @@ public class Ejercicio4 {
 
 	public static void main(String[] args) {
 		// indicamos con la variable int num1 y num2
-		int num1, num2,menor,mcd=0;
+		int num1, num2, menor, mcd = 0;
 
 		// creamos scanner
 		Scanner sc = new Scanner(System.in);
@@ -22,7 +22,8 @@ public class Ejercicio4 {
 
 		// escribimos num1
 		num2 = sc.nextInt();
-		//con if declaramos que si num1 es menor o num 2, que se guarde el resultado en menor 
+		// con if declaramos que si num1 es menor o num 2, que se guarde el resultado en
+		// menor
 		if (num1 > num2) {
 
 			menor = num2;
@@ -31,17 +32,19 @@ public class Ejercicio4 {
 
 			menor = num1;
 		}
-		//con for hacemos que se haga las intrucciones hasta que i sea igual a menor
-		for (int i=2;i<=menor;i++ ) {
-			//declaramos con if que si num1 o num2 no da resto, que se guarde el divisor actual en mcd
+		// con for hacemos que se haga las intrucciones hasta que i sea igual a menor
+		for (int i = 2; i <= menor; i++) {
+
+			// declaramos con if que si num1 o num2 no da resto, que se guarde el divisor
+			// actual en mcd
 			if (num1 % i == 0 && num2 % i == 0) {
-                mcd = i;
-            }
+				mcd = i;
+			}
 		}
-		//imprimimos en consola el resultado
-		System.out.println("El maximo comun divisor de: " +num1+" y " +num2+" es " +mcd);	
-		
-		//cerramos scanner
+		// imprimimos en consola el resultado
+		System.out.println("El maximo comun divisor de: " + num1 + " y " + num2 + " es " + mcd);
+
+		// cerramos scanner
 		sc.close();
 	}
 }

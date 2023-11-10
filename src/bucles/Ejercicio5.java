@@ -23,7 +23,7 @@ public class Ejercicio5 {
 		// escribimos num1
 		num2 = sc.nextInt();
 
-		// con for buscamos que numero es mayor, y que se guarde en maximo
+		// con if buscamos que numero es mayor, y que se guarde en maximo
 		if (num1 > num2) {
 			maximo = num1;
 		} else {
@@ -33,7 +33,7 @@ public class Ejercicio5 {
 		mcm = maximo;
 
 		// con for hacemos el contador para sacar el mcm
-		for (int i = 1;; i++) {
+		for (int i = 1; ;i++) {
 
 			// mcm es igaul a la multiplicacion de maximo y i
 			mcm = maximo * i;

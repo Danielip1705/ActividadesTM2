@@ -2,17 +2,27 @@ package bucles;
 
 import java.util.Scanner;
 
+/*/ENTRADA:100 | RES.ESPERADO:Hay 25 numeros primos entre 1 y 100 | RES.OBTENIDO: Hay 25 numeros primos entre 1 y 100
+ * ENTRADA:10 | RES.ESPERADO:Hay 4 numeros primos entre 1 y 10 | RES.OBTENIDO: Hay numeros primos entre
+ */
 public class Ejercicicio2 {
 
 	public static void main(String[] args) {
-		int num, numpri = 0;
+		int num=0, numpri = 0;
 		// creamos scanner
 		Scanner sc = new Scanner(System.in);
-		// imprimimos en consola que nos inserte un numero
-		System.out.println("Inserta un numero");
+		do {
+		try {
+			// imprimimos en consola que nos inserte un numero
+			System.out.println("Inserta un numero");
 
-		// escribimos num
-		num = sc.nextInt();
+			// escribimos num
+			num = sc.nextInt();
+		} catch (Exception e) {
+			System.out.println("No puedes escribir una letra");
+			sc.nextLine();
+		}
+		}while(num<0);
 
 		// indicamos con for, la 1 cifra que se va a dividir
 		for (int i = 2; i <= num; i++) {
@@ -32,9 +42,9 @@ public class Ejercicicio2 {
 			}
 		}
 		// imprimimos en consola el resultado
-		System.out.println("Hay " + numpri + " numeros primos");
-		
-		//cerramos scanner
+		System.out.println("Hay " + numpri + " numeros primos entre 1 y " + num);
+
+		// cerramos scanner
 		sc.close();
 	}
 }

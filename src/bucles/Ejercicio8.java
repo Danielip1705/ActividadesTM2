@@ -6,26 +6,12 @@ public class Ejercicio8 {
 
 	public static void main(String[] args) {
 		// declaramos con la variable int el valor,num,numintroducido,fallo
-		int valor = 0, num, numintroducido = 0, fallos = 0;
+		int valor = 0, num=1, numintroducido = 0, fallos = 0;
 
 		// creamos scanner
 		Scanner sc = new Scanner(System.in);
 		// iniciamos do-while
-		do {
-			// iniciamos try
-			try {
-				// imprimimos en consola que nos escriba el nummero inicial
-				System.out.println("Dime un numero inicial");
 
-				// escribimos valor
-				valor = sc.nextInt();
-				// inidicamos catch
-			} catch (Exception e) {
-				System.out.println("El numero introducido no puede ser 0");
-				sc.nextLine();
-			}
-			// que siga el bucle hasta que valor no sea 0
-		} while (valor != 0);
 		// imprimimos en consola que nos escriba el nummero inicial
 		System.out.println("Dime un numero inicial");
 
@@ -33,7 +19,8 @@ public class Ejercicio8 {
 		valor = sc.nextInt();
 
 		// iniciamos do
-		do {
+		while(num>0) {
+			
 			// imprimimos en consola que nos escriba un numero
 			System.out.println("Dime un numero");
 
@@ -42,13 +29,13 @@ public class Ejercicio8 {
 			// con if, declaramos que si num es menor, nos imprima en consola error
 			// y incrememente fallos
 			if (num <= valor) {
-				System.out.println("Error, el numero es mayor");
+				System.out.println("Error, el numero es menor");
 				fallos++;
 			}
 			// tras finalizar el ciclo, aumentamos el numintroducido
 			numintroducido++;
 			// se acaba la funcion do-while cuando se escriba 0
-		} while (num != 0);
+		} 
 		// imprimimos en consola los numeros introducidos
 		System.out.println("Total de numeros introducidos: " + numintroducido);
 

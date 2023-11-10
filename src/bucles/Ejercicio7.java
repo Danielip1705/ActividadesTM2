@@ -19,12 +19,17 @@ public class Ejercicio7 {
 
 		//con for declaramos la altura que tiene la piramide
 		for (int altura = 1; altura <= num; altura++) {
+			
 			//con for declaramos los numeros accedentes
 			for (int numizq = 1; numizq <=altura ;numizq++) {
+				
+				//imprimimos numizq
 				System.out.print(numizq);
 			}
 			//con for declaramos los numeros de forma desendende 
 			for (int numder = altura-1; numder >= 1 ; numder--) {
+				
+				//imprimimos numder
 				System.out.print(numder);
 			}
 			//imprimimos en consola un salto de linea
