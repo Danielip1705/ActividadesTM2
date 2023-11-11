@@ -35,7 +35,7 @@ public class Ejercicio9 {
 				System.out.println("No se puede insertar letras");
 				sc.nextLine();
 			}
-		} while (num < 0);
+		} while (num <= 0);
 
 		// iniciamos while hasta que num sea menor que 0
 		while (num > 0) {

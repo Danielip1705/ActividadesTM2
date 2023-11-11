@@ -11,7 +11,8 @@ import java.util.Scanner;
 public class Ejercicicio2 {
 
 	public static void main(String[] args) {
-		int num = 0, numpri = 0;
+		//iniciamos con la variable int num y numpri
+		int num = -1, numpri = 0;
 		// creamos scanner
 		Scanner sc = new Scanner(System.in);
 		// iniciamos el bucle do-w, si el num no es menor que cero sale del bucle

@@ -34,7 +34,7 @@ public class Ejercicio10 {
 				sc.nextLine();
 			}
 			// que siga el bucle hasta que num sea mayor que 0
-		} while (num < 0);
+		} while (num <= 0);
 
 		// declaramos que num1 es igual a num
 		num1 = num;

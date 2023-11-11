@@ -12,7 +12,7 @@ public class Ejercicio4 {
 
 	public static void main(String[] args) {
 		// indicamos con la variable int num1 y num2
-		int num1 = 0, num2=0, menor, mcd = 0;
+		int num1 = -1, num2= -1, menor, mcd = 0;
 
 		// creamos scanner
 		Scanner sc = new Scanner(System.in);

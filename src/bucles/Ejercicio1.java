@@ -11,7 +11,6 @@ import java.util.InputMismatchException;
  * ENTRADA:21,69 | RES.ESPERADO:Inserta los minutos | RES.OBTENIDO: Inserta los minutos
  * ENTRADA:21,3,74 | RES.ESPERADO:Inserta los segundos | RES.OBTENIDO:Inserta los segundos    
  */
-
 import java.util.Scanner;
 
 /*/ENTRADA:10,10,10,10 | RES.ESPERADO:10:10:20 | RES.OBTENIDO:10:10:20
@@ -24,9 +23,10 @@ public class Ejercicio1 {
 
 	public static void main(String[] args) {
 		// Declaramos las variables para hora, minutos, segundos e incremento
-		int hora = 0, minutos = 0, segundos = 0, incremento;
+		int hora = -1, minutos = -1, segundos = -1, incremento;
 
 		// creamos un scanner
+
 		Scanner sc = new Scanner(System.in);
 		// iniciamos bucle do-while para que escriba la hora
 		do {
@@ -43,8 +43,9 @@ public class Ejercicio1 {
 			} catch (InputMismatchException e) {
 				System.out.println("El dato introduccido no es correcto");
 				sc.nextLine();
+				
 			}
-
+			//se sale del bucle si la hora no es menor que 0 o mayor de 23
 		} while (hora < 0 || hora > 23);
 
 		// ahora con los minutos
@@ -59,7 +60,7 @@ public class Ejercicio1 {
 				System.out.println("El dato introduccido no es correcto");
 				sc.nextLine();
 			}
-
+			//se sale del bucle si los minutos no es menor que 0 o mayor de 59
 		} while (minutos < 0 || minutos > 59);
 
 		// ahora con los segundos
@@ -68,13 +69,13 @@ public class Ejercicio1 {
 				// imprimimos en consola que nos inserte los segundos
 				System.out.println("Inserta los segundos");
 
-				// escribimos los minutos
+				// escribimos los segundos
 				segundos = sc.nextInt();
 			} catch (InputMismatchException e) {
 				System.out.println("El dato introduccido no es correcto");
 				sc.nextLine();
 			}
-
+			//se sale del bucle si los segundos no es menor que 0 o mayor de 59
 		} while (segundos < 0 || segundos > 59);
 
 		// Imprimimos en consola que nos inserte el incremento

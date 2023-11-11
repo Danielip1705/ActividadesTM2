@@ -40,7 +40,7 @@ public class Ejercicio7 {
 				System.out.println("No puedes escribir letras");
 				sc.nextLine();
 			}
-		} while (num < 0);
+		} while (num <= 0);
 
 		// con for declaramos la altura que tiene la piramide
 		for (int altura = 1; altura <= num; altura++) {

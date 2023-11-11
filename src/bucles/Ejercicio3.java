@@ -49,7 +49,7 @@ public class Ejercicio3 {
 			}
 			// indicamos con for los asteriscos que debe de tener cada fila
 			for (int relleno = 1; relleno <= altura; relleno++) {
-				System.out.print(" *");
+				System.out.print("* ");
 
 			}
 			// espacio para cada asterisco

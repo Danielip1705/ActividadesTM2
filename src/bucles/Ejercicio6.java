@@ -5,12 +5,21 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Ejercicio6 {
-	/*
-	 * /ENTRADA:5 | RES.ESPERADO: 1 22 333 4444 55555 | RES.OBTENIDO: 1 22 333 4444
-	 * 55555 ENTRADA:-5 | RES.ESPERADO:Inserta un numero | RES.OBTENIDO: Inserta un
-	 * numero ENTRADA:hola | RES.ESPERADO: No puedes escribir letras | RES.OBTENIDO:
-	 * No puedes escribir letras
-	 */
+/*
+* /ENTRADA:5 | RES.ESPERADO: 
+* 1
+* 22
+* 333
+* 4444
+* 55555 | RES.OBTENIDO:
+* 1
+* 22
+* 333
+* 4444
+* 55555 
+* ENTRADA:-5 | RES.ESPERADO:Inserta un numero | RES.OBTENIDO: Inserta un numero 
+* ENTRADA:hola | RES.ESPERADO: No puedes escribir letras | RES.OBTENIDO: 5No puedes escribir letras
+*/
 	public static void main(String[] args) {
 		// declaramos con la variable int el num
 		int num = 0;
@@ -32,7 +41,7 @@ public class Ejercicio6 {
 				System.out.println("No puedes escribir letras");
 				sc.nextLine();
 			}
-		} while (num < 0);
+		} while (num <=0);
 
 		// con for declaramos el num filas que debe de hacer
 		for (int i = 1; i <= num; i++) {
