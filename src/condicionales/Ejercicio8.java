@@ -1,7 +1,9 @@
 package condicionales;
 
 import java.util.Scanner;
-
+/*/ENTRADA:549,5| RES.ESPERADO:Su precio a pagar es de: 1372.5 | RES.OBTENIDO:Su precio a pagar es de: 1372.5
+ * ENTRADA:945,12 | RES.ESPERADO:Su precio a pagar es de: 1653.75 | RES.OBTENIDO:Su precio a pagar es de: 1653.75
+ */
 public class Ejercicio8 {
 
 	public static void main(String[] args) {

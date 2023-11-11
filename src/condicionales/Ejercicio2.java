@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Ejercicio2 {
 
 	public static void main(String[] args) {
-		// Indicamos con la variable int el dni
+		// Indicamos con la variable int el dni y resultado
 		int dni;
 		int result = 0;
 

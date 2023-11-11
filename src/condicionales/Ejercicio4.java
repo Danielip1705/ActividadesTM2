@@ -1,7 +1,10 @@
 package condicionales;
 
 import java.util.Scanner;
-
+/*/ENTRADA:1 | RES.ESPERADO:Uno | RES.OBTENIDO:Uno
+ * ENTRADA:11 | RES.ESPERADO:Once | RES.OBTENIDO:Once
+ * ENTRADA:56 | RES.ESPERADO: Cincuenta y Seis | RES.OBTENIDO: Cincuenta y Seis
+ */
 public class Ejercicio4 {
 
 	public static void main(String[] args) {

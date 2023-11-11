@@ -1,11 +1,16 @@
 package condicionales;
 
 import java.util.Scanner;
-
+/*/ENTRADA:10,10,10 | RES.ESPERADO:10:10:11 | RES.OBTENIDO:10:10:11
+ * ENTRADA:10,10,1 | RES.ESPERADO:10:10:01 | RES.OBTENIDO:10:10:01
+ * ENTRADA:10,5,4 | RES.ESPERADO:10:05:04 | RES.OBTENIDO: 10:05:04
+ * ENTRADA:5,5,4 | RES.ESPERADO:05:05:04 | RES.OBTENIDO:05:05:04
+ * ENTRADA:23,59,59 | RES.ESPERADO:00:00:00 | RES.OBTENIDO:00:00:00
+ */
 public class Ejercicio7 {
 
 	public static void main(String[] args) {
-		// Declaramos con la variable int las horass,minutos y segundos
+		// Declaramos con la variable int las horas,minutos y segundos
 		int horas, minutos, segundos;
 
 		// creamos un scanner

@@ -1,14 +1,16 @@
 package condicionales;
 
 import java.util.Scanner;
-
+/*/ENTRADA:100,5,5 | RES.ESPERADO:Tenemos suficiente comida para alimentar a todos los animales | RES.OBTENIDO:Tenemos suficiente comida para alimentar a todos los animales
+ * ENTRADA:45,5,10 | RES.ESPERADO:No hay suficiente comida, cada animal tendra que comer  9.0 kg el dia de hoy | RES.OBTENIDO:No hay suficiente comida, cada animal tendra que comer  9.0 kg el dia de hoy
+ */
 public class Ejercicio3 {
 
 	public static void main(String[] args) {
-		//declaramos con int cantidad y animales
+		//declaramos con int animales
 		int animales;
 		
-		//declaramos con double resultado y kilos
+		//declaramos con double los kilos,comen,y  cantidad
 		double kilos,comen,total,cantidad;
 		
 		//creamos scanner
@@ -32,15 +34,15 @@ public class Ejercicio3 {
 		//Escribimos los kilos que comen los animales
 		kilos = sc.nextDouble();
 		
+		//calculamos lo que comen los animales
 		comen = animales*kilos;
 		
-		total= cantidad-comen;
 		if ((cantidad-comen)>0) {
-			System.out.println("Tenemos suficiente comida para alimentar a todos los animaeles");
+			System.out.println("Tenemos suficiente comida para alimentar a todos los animales");
 			
 		} else {
 			cantidad/=animales;
-			System.out.println("No hay suficiente comida, cada animal tendra que comer  " + cantidad +"kg el dia de hoy");
+			System.out.println("No hay suficiente comida, cada animal tendra que comer  " + cantidad +" kg el dia de hoy");
 		}
 			
 		

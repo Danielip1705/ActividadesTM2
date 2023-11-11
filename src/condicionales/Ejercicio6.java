@@ -2,11 +2,13 @@ package condicionales;
 
 import java.util.Random;
 import java.util.Scanner;
-
+/*/ENTRADA:45 | RES.ESPERADO:El numero insertado es incorrecto | RES.OBTENIDO:El numero insertado es incorrecto
+ * ENTRADA:32 | RES.ESPERADO:El numero insertado es correcto | RES.OBTENIDO:El numero insertado es correcto
+ */
 public class Ejercicio6 {
 
 	public static void main(String[] args) {
-		//indicamos con la variable int maq1/2,resultadi y resultadomaq
+		//indicamos con la variable int maq1/2,resultado y resultadomaq
 		int maq1,maq2,resultado,resultadomaq;
 		
 		//creamos scanner
