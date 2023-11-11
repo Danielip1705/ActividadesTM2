@@ -8,8 +8,7 @@ import java.util.Scanner;
  * ENTRADA:54 | RES.ESPERADO: NO ES CAPICUA | RES.OBTENIDO: NO ES CAPICUA
  * ENTRADA:101 | RES.ESPERADO: CAPICUA | RES.OBTENIDO: CAPICUA
  * ENTRADA:-6 | RES.ESPERADO: Inserte un numero positivo | RES.OBTENIDO:Inserte un numero positivo
- * ENTRADA: | RES.ESPERADO: | RES.OBTENIDO:
- * ENTRADA: | RES.ESPERADO: | RES.OBTENIDO:
+ * ENTRADA:hola | RES.ESPERADO:No se puede insertar letras | RES.OBTENIDO: No se puede insertar letras
  */
 public class Ejercicio10 {
 
